@@ -1,0 +1,172 @@
+span.select-disabled::before {
+    content: attr(data-display);
+}
+
+.checkbox {
+    display: inline-block;
+    height: 1em;
+    width: 1.72em;
+    border: .07em solid rgb(202, 200, 204);
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    border-radius: .5em;
+    position: relative;
+    box-shadow: 0 0em 0em #ccc;
+    transition: ease-in-out background-color .1s, ease-out box-shadow .15s;
+    cursor: pointer;
+}
+
+.checkbox:hover {
+    box-shadow: 0 .02em .05em #ccc;
+}
+
+.checkbox>i {
+    display: inline-block;
+    height: .88em;
+    width: .88em;
+    border-radius: 100%;
+    border: none;
+    box-sizing: border-box;
+    position: absolute;
+    top: -.01em;
+    left: 0em;
+    transition: ease-in-out left .1s;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 .07em #888;
+}
+
+.checkbox:not([ui-checked="true"])>i {
+    left: -.02em;
+}
+
+.checkbox[ui-checked="true"]>i {
+    left: .73em;
+}
+
+.checkbox:not([ui-checked="true"]) {
+    background-color: rgb(255, 255, 255);
+}
+
+.checkbox[ui-checked="true"] {
+    background-color: rgb(93, 122, 250);
+}
+
+input.textbox {
+    border: .07em solid rgb(202, 200, 204);
+    height: 2.2em;
+    width: 20rem;
+    border-radius: .5em;
+    box-sizing: border-box;
+    transition: ease-in-out border .1s, ease-in-out color .15s, ease-out box-shadow .15s;
+    outline: none;
+    margin-top: -.2em;
+    margin-bottom: -.2em;
+    padding: 0 .45em 0 .45em;
+    box-shadow: 0 0em 0em #ccc;
+    color: #999;
+}
+
+input.textbox.right {
+    text-align: right;
+}
+
+input.textbox:hover {
+    box-shadow: 0 .02em .05em #ccc;
+    color: #666;
+}
+
+input.textbox:focus {
+    border: .15em solid rgb(93, 122, 250);
+    color: #666;
+}
+
+.drop-select {
+    font-size: 1rem;
+    height: 1.9em;
+    width: 10em;
+    margin-top: -.2em;
+    margin-bottom: -.2em;
+    box-sizing: border-box;
+    background-color: #fff;
+    position: relative;
+}
+
+.drop-select > .options {
+    overflow: hidden;
+    position: absolute;
+    top: 2.05em;
+    right: .08em;
+    box-sizing: border-box;
+    z-index: 1009;
+    visibility: hidden;
+    width: 12em;
+    transition: ease-in-out top .1s, ease-in-out right .1s;
+}
+
+.drop-select[ui-dropped="true"] > .options {
+    top: 2.15em;
+    right: .15em;
+    visibility: unset;
+}
+
+.drop-select > .options > .option {
+    border: .07em solid rgb(223, 221, 223);
+    background-color: #f8f7f8;
+    box-sizing: border-box;
+    height: 1.9em;
+    width: 100%;
+    border-radius: .5em;
+    margin-bottom: .35em;
+    color: #999;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 0em 0em #ddd;
+    transition: ease-in-out background-color .1s, ease-out box-shadow .15s;
+}
+
+.drop-select > .options > .option:hover {
+    box-shadow: 0 .02em .05em #ddd;
+    background-color: #fcfbfc;
+}
+
+.drop-select > .options > .option > span {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.drop-select > .selected {
+    margin: 0;
+    border: .07em solid rgb(202, 200, 204);
+    width: 100%;
+    height: 100%;
+    border-radius: .5em;
+    color: #999;
+    text-align: center;
+    margin-top: .17em;
+    margin-bottom: .17em;
+    box-sizing: border-box;
+    transition: ease-in-out border .1s, ease-in-out color .15s, ease-out box-shadow .15s;
+    cursor: pointer;
+    position: absolute;
+    top: -.2em;
+    box-shadow: 0 0em 0em #ccc;
+}
+
+.drop-select > .selected > span {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.drop-select> .selected:hover {
+    color: #666;
+    box-shadow: 0 .02em .05em #ccc;
+}
+
+.drop-select[ui-dropped="true"] > .selected {
+    color: #666;
+    border: .15em solid rgb(93, 122, 250);
+}

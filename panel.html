@@ -1,0 +1,709 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no">
+    <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-d/jquery/3.5.1/jquery.slim.min.js"></script>
+    <link href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-d/font-awesome/5.15.2/css/all.min.css" type="text/css"
+        rel="stylesheet">
+    <link href="./juicy-ui.css" type="text/css" rel="stylesheet">
+    <link href="./juicy-panel-pc.css" type="text/css" rel="stylesheet">
+    <link href="./juicy-panel-mobi.css" type="text/css" rel="stylesheet">
+    <title>控制面板 &middot; Extend Luogu &middot; Powered by Juicy Panel</title>
+</head>
+
+<body>
+    <div class="panel">
+        <div class="header">
+            <div class="header-text">
+                <div class="main-header">Extend Luogu</div>
+                <span class="meta">Powered by Juicy Panel</span>
+            </div>
+        </div>
+        <div class="content">
+            <div class="inner">
+                <div class="sub">
+                    <div class="inner">
+                        <div class="subside">
+                            <div class="item" main-data="dash-bridge">
+                                <div class="header">控制桥</div>
+                                <div class="meta">dash-bridge</div>
+                                <div class="right-floating">
+                                    <div class="checkbox">
+                                        <i></i>
+                                        <input type="hidden" name="dash_bridge">
+                                    </div>
+                                    <div class="more">
+                                        <div class="content"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                                <div class="fake-button"></div>
+                            </div>
+                            <div class="item" main-data="update">
+                                <div class="header">检查更新</div>
+                                <div class="meta">update</div>
+                                <div class="right-floating">
+                                    <div class="checkbox">
+                                        <i></i>
+                                        <input type="hidden" name="update">
+                                    </div>
+                                    <div class="more-placeholder"></div>
+                                </div>
+                            </div>
+                            <div class="item" main-data="exlg-dialog-board">
+                                <div class="header">EXLG 公告板</div>
+                                <div class="meta">exlg-dialog-board</div>
+                                <div class="right-floating">
+                                    <div class="checkbox">
+                                        <i></i>
+                                        <input type="hidden" name="exlg_dialog_board">
+                                    </div>
+                                    <div class="more">
+                                        <div class="content"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                                <div class="fake-button"></div>
+                            </div>
+                            <div class="item" main-data="update-log">
+                                <div class="header">更新日志显示</div>
+                                <div class="meta">update-log</div>
+                                <div class="right-floating">
+                                    <div class="checkbox">
+                                        <i></i>
+                                        <input type="hidden" name="update_log">
+                                    </div>
+                                    <div class="more-placeholder"></div>
+                                </div>
+                            </div>
+                            <div class="item" main-data="emoticon">
+                                <div class="header">表情输入</div>
+                                <div class="meta">emoticon</div>
+                                <div class="right-floating">
+                                    <div class="checkbox">
+                                        <i></i>
+                                        <input type="hidden" name="emoticon">
+                                    </div>
+                                    <div class="more">
+                                        <div class="content"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                                <div class="fake-button"></div>
+                            </div>
+                            <div class="item" main-data="user-intro-ins">
+                                <div class="header">主页指令</div>
+                                <div class="meta">user-intro-ins</div>
+                                <div class="right-floating">
+                                    <div class="checkbox">
+                                        <i></i>
+                                        <input type="hidden" name="user_intro_ins">
+                                    </div>
+                                    <div class="more-placeholder"></div>
+                                </div>
+                            </div>
+                            <div class="item" main-data="user-problem-color">
+                                <div class="header">题目颜色数量和比较</div>
+                                <div class="meta">user-problem-color</div>
+                                <div class="right-floating">
+                                    <div class="checkbox">
+                                        <i></i>
+                                        <input type="hidden" name="user_problem_color">
+                                    </div>
+                                    <div class="more">
+                                        <div class="content"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                                <div class="fake-button"></div>
+                            </div>
+                            <div class="item" main-data="benben">
+                                <div class="header">全网犇犇</div>
+                                <div class="meta">benben</div>
+                                <div class="right-floating">
+                                    <div class="checkbox">
+                                        <i></i>
+                                        <input type="hidden" name="benben">
+                                    </div>
+                                    <div class="more">
+                                        <div class="content"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                                <div class="fake-button"></div>
+                            </div>
+                            <div class="item" main-data="rand-problem-ex">
+                                <div class="header">随机跳题 EX</div>
+                                <div class="meta">rand-problem-ex</div>
+                                <div class="right-floating">
+                                    <div class="checkbox">
+                                        <i></i>
+                                        <input type="hidden" name="rand_problem_ex">
+                                    </div>
+                                    <div class="more-placeholder"></div>
+                                </div>
+                            </div>
+                            <div class="item" main-data="code-block-ex">
+                                <div class="header">代码块优化</div>
+                                <div class="meta">code-block-ex</div>
+                                <div class="right-floating">
+                                    <div class="checkbox">
+                                        <i></i>
+                                        <input type="hidden" name="code_block_ex">
+                                    </div>
+                                    <div class="more">
+                                        <div class="content"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                                <div class="fake-button"></div>
+                            </div>
+                            <div class="item" main-data="rand-training-problem">
+                                <div class="header">题单内随机跳题</div>
+                                <div class="meta">rand-training-problem</div>
+                                <div class="right-floating">
+                                    <div class="checkbox">
+                                        <i></i>
+                                        <input type="hidden" name="rand_training_problem">
+                                    </div>
+                                    <div class="more">
+                                        <div class="content"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                                <div class="fake-button"></div>
+                            </div>
+                            <div class="item" main-data="tasklist-ex">
+                                <div class="header">任务计划 EX</div>
+                                <div class="meta">tasklist-ex</div>
+                                <div class="right-floating">
+                                    <div class="checkbox">
+                                        <i></i>
+                                        <input type="hidden" name="tasklist_ex">
+                                    </div>
+                                    <div class="more">
+                                        <div class="content"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                                <div class="fake-button"></div>
+                            </div>
+                            <div class="item" main-data="dbc-jump">
+                                <div class="header">双击题号跳题</div>
+                                <div class="meta">dbc-jump</div>
+                                <div class="right-floating">
+                                    <div class="checkbox">
+                                        <i></i>
+                                        <input type="hidden" name="dbc_jump">
+                                    </div>
+                                    <div class="more-placeholder"></div>
+                                </div>
+                            </div>
+                            <div class="item" main-data="hide-solution">
+                                <div class="header">隐藏题解</div>
+                                <div class="meta">hide-solution</div>
+                                <div class="right-floating">
+                                    <div class="checkbox">
+                                        <i></i>
+                                        <input type="hidden" name="hide_solution">
+                                    </div>
+                                    <div class="more">
+                                        <div class="content"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                                <div class="fake-button"></div>
+                            </div>
+                            <div class="item" main-data="back-to-contest">
+                                <div class="header">返回比赛题单</div>
+                                <div class="meta">back-to-contest</div>
+                                <div class="right-floating">
+                                    <div class="checkbox">
+                                        <i></i>
+                                        <input type="hidden" name="back_to_contest">
+                                    </div>
+                                    <div class="more-placeholder"></div>
+                                </div>
+                            </div>
+                            <div class="item" main-data="submission-color">
+                                <div class="header">记录难度可视化</div>
+                                <div class="meta">submission-color</div>
+                                <div class="right-floating">
+                                    <div class="checkbox">
+                                        <i></i>
+                                        <input type="hidden" name="submission_color">
+                                    </div>
+                                    <div class="more-placeholder"></div>
+                                </div>
+                            </div>
+                            <div class="item" main-data="keyboard-and-cli">
+                                <div class="header">键盘操作与命令行</div>
+                                <div class="meta">keyboard-and-cli</div>
+                                <div class="right-floating">
+                                    <div class="checkbox">
+                                        <i></i>
+                                        <input type="hidden" name="keyboard_and_cli">
+                                    </div>
+                                    <div class="more">
+                                        <div class="content"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                                <div class="fake-button"></div>
+                            </div>
+                            <div class="item" main-data="search-user">
+                                <div class="header">查找用户名</div>
+                                <div class="meta">search-user</div>
+                                <div class="right-floating">
+                                    <div class="checkbox">
+                                        <i></i>
+                                        <input type="hidden" name="search_user">
+                                    </div>
+                                    <div class="more-placeholder"></div>
+                                </div>
+                            </div>
+                            <div class="item" main-data="benben-ranklist">
+                                <div class="header">犇犇龙王排行榜</div>
+                                <div class="meta">benben-ranklist</div>
+                                <div class="right-floating">
+                                    <div class="checkbox">
+                                        <i></i>
+                                        <input type="hidden" name="benben_ranklist">
+                                    </div>
+                                    <div class="more">
+                                        <div class="content"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                                <div class="fake-button"></div>
+                            </div>
+                            <div class="item" main-data="discussion-save">
+                                <div class="header">讨论保存</div>
+                                <div class="meta">discussion-save</div>
+                                <div class="right-floating">
+                                    <div class="checkbox">
+                                        <i></i>
+                                        <input type="hidden" name="discussion_save">
+                                    </div>
+                                    <div class="more">
+                                        <div class="content"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                                <div class="fake-button"></div>
+                            </div>
+                            <div class="item" main-data="sponsor-list">
+                                <div class="header">获取赞助者列表</div>
+                                <div class="meta">sponsor-list</div>
+                                <div class="right-floating">
+                                    <div class="checkbox">
+                                        <i></i>
+                                        <input type="hidden" name="sponsor_list">
+                                    </div>
+                                    <div class="more-placeholder"></div>
+                                </div>
+                            </div>
+                            <div class="item" main-data="sponsor-tag">
+                                <div class="header">赞助者头衔显示</div>
+                                <div class="meta">sponsor-tag</div>
+                                <div class="right-floating">
+                                    <div class="checkbox">
+                                        <i></i>
+                                        <input type="hidden" name="sponsor_tag">
+                                    </div>
+                                    <div class="more-placeholder"></div>
+                                </div>
+                            </div>
+                            <div class="item" main-data="mainpage-discuss-limit">
+                                <div class="header">首页讨论个数限制</div>
+                                <div class="meta">mainpage-discuss-limit</div>
+                                <div class="right-floating">
+                                    <div class="checkbox">
+                                        <i></i>
+                                        <input type="hidden" name="mainpage_discuss_limit">
+                                    </div>
+                                    <div class="more">
+                                        <div class="content"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                                <div class="fake-button"></div>
+                            </div>
+                            <div class="item" main-data="benben-emoticon">
+                                <div class="header">犇犇表情输入</div>
+                                <div class="meta">benben-emoticon</div>
+                                <div class="right-floating">
+                                    <div class="checkbox">
+                                        <i></i>
+                                        <input type="hidden" name="benben_emoticon">
+                                    </div>
+                                    <div class="more">
+                                        <div class="content"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                                <div class="fake-button"></div>
+                            </div>
+                            <div class="item" main-data="user-css">
+                                <div class="header">自定义样式表</div>
+                                <div class="meta">user-css</div>
+                                <div class="right-floating">
+                                    <div class="checkbox">
+                                        <i></i>
+                                        <input type="hidden" name="user_css">
+                                    </div>
+                                    <div class="more">
+                                        <div class="content"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                                <div class="fake-button"></div>
+                            </div>
+                        </div>
+                        <div class="subside">
+                            <div class="item" main-data="springboard">
+                                <div class="header">跨域跳板</div>
+                                <div class="meta">springboard</div>
+                            </div>
+                            <div class="item" main-data="version-data">
+                                <div class="header">版本数据</div>
+                                <div class="meta">version-data</div>
+                            </div>
+                            <div class="item" main-data="dash-board">
+                                <div class="header">控制面板</div>
+                                <div class="meta">user-css</div>
+                                <div class="right-floating">
+                                    <div class="more">
+                                        <div class="content"><i class="fas fa-angle-right"></i></div>
+                                    </div>
+                                </div>
+                                <div class="fake-button"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="submain" main-data="dash-bridge">
+                        <div class="item">
+                            <div class="header">来源</div>
+                            <div class="meta">Source</div>
+                            <div class="right-floating">
+                                <div class="drop-select">
+                                    <div class="selected"><span class="select-disabled"></span></div>
+                                    <div class="options">
+                                        <div class="option default" data="exlg"><span class="select-disabled"
+                                                data-display="EXLG"></span></div>
+                                        <div class="option" data="gh_index"><span class="select-disabled"
+                                                data-display="GitHub 索引"></span></div>
+                                        <div class="option" data="debug"><span class="select-disabled"
+                                                data-display="Debug"></span></div>
+                                    </div>
+                                    <input type="hidden" name="dash_bridge__source">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="header">最新版本忽略</div>
+                            <div class="meta">Latest Ignore</div>
+                            <div class="right-floating">
+                                <input class="textbox right" type="text" name="dash_bridge__latest_ignore">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submain" main-data="exlg-dialog-board">
+                        <div class="item">
+                            <div class="header">动画速度</div>
+                            <div class="meta">Animation Speed</div>
+                            <div class="right-floating">
+                                <div class="drop-select">
+                                    <div class="selected"><span class="select-disabled"></span></div>
+                                    <div class="options">
+                                        <div class="option" data="0s"><span class="select-disabled"
+                                                data-display="瞬间"></span></div>
+                                        <div class="option default" data=".2s"><span class="select-disabled"
+                                                data-display="0.2 秒"></span></div>
+                                        <div class="option" data=".25s"><span class="select-disabled"
+                                                data-display="0.25 秒"></span></div>
+                                        <div class="option" data=".4s"><span class="select-disabled"
+                                                data-display="0.4 秒"></span></div>
+                                    </div>
+                                    <input type="hidden" name="exlg_dialog_board__animation_speed">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="header">确认位置</div>
+                            <div class="meta">Confirm Position</div>
+                            <div class="right-floating">
+                                <div class="drop-select">
+                                    <div class="selected"><span class="select-disabled"></span></div>
+                                    <div class="options">
+                                        <div class="option default" data="right"><span class="select-disabled"
+                                                data-display="右侧"></span></div>
+                                        <div class="option" data="left"><span class="select-disabled"
+                                                data-display="左侧"></span></div>
+                                    </div>
+                                    <input type="hidden" name="exlg_dialog_board__confirm_position">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submain" main-data="emoticon">
+                        <div class="item">
+                            <div class="header">显示</div>
+                            <div class="meta">Show</div>
+                            <div class="right-floating">
+                                <div class="checkbox">
+                                    <i></i>
+                                    <input type="hidden" name="emoticon__show">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="header">高度限制</div>
+                            <div class="meta">Height Limit</div>
+                            <div class="right-floating">
+                                <div class="checkbox">
+                                    <i></i>
+                                    <input type="hidden" name="emoticon__height_limit">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submain" main-data="user-problem-color">
+                        <div class="item">
+                            <div class="header">题目比较</div>
+                            <div class="meta">Problem Compare</div>
+                            <div class="right-floating">
+                                <div class="checkbox">
+                                    <i></i>
+                                    <input type="hidden" name="user_problem_color__problem_compare">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submain" main-data="benben">
+                        <div class="item">
+                            <div class="header">来源</div>
+                            <div class="meta">Source</div>
+                            <div class="right-floating">
+                                <div class="drop-select">
+                                    <div class="selected"><span class="select-disabled"></span></div>
+                                    <div class="options">
+                                        <div class="option default" data="o2"><span class="select-disabled"
+                                                data-display="optimize_2"></span></div>
+                                        <div class="option" data="shy"><span class="select-disabled"
+                                                data-display="songhongyi"></span></div>
+                                    </div>
+                                    <input type="hidden" name="benben__source">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submain" main-data="code-block-ex">
+                        <div class="item">
+                            <div class="header">显示代码语言</div>
+                            <div class="meta">Show Code Lang</div>
+                            <div class="right-floating">
+                                <div class="checkbox">
+                                    <i></i>
+                                    <input type="hidden" name="code_block_ex__show_code_lang">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="header">复制代码位置</div>
+                            <div class="meta">Copy Code Position</div>
+                            <div class="right-floating">
+                                <div class="drop-select">
+                                    <div class="selected"><span class="select-disabled"></span></div>
+                                    <div class="options">
+                                        <div class="option default" data="left"><span class="select-disabled"
+                                                data-display="左侧"></span></div>
+                                        <div class="option" data="right"><span class="select-disabled"
+                                                data-display="右侧"></span></div>
+                                    </div>
+                                    <input type="hidden" name="code_block_ex__copy_code_position">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="header">代码块标题</div>
+                            <div class="meta">Code Block Title</div>
+                            <div class="right-floating">
+                                <input class="textbox right" type="text" name="code_block_ex__code_block_title">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="header">代码字体</div>
+                            <div class="meta">Code Font</div>
+                            <div class="right-floating">
+                                <input class="textbox right" type="text" name="code_block_ex__code_font">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="header">最大显示行数</div>
+                            <div class="meta">Max Show Lines</div>
+                            <div class="right-floating">
+                                <div class="slider" data-min="-1" data-max="100" data-val="-1">
+                                    <div class="fake-slider"></div>
+                                    <div class="thumb"></div>
+                                    <input type="hidden" name="code_block_ex__max_show_lines">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submain" main-data="rand-training-problem">
+                        <div class="item">
+                            <div class="header">模式</div>
+                            <div class="meta">Mode</div>
+                            <div class="right-floating">
+                                <div class="drop-select">
+                                    <div class="selected"><span class="select-disabled"></span></div>
+                                    <div class="options">
+                                        <div class="option default" data="unac_and_new"><span class="select-disabled"
+                                                data-display="未通过和未提交"></span></div>
+                                        <div class="option" data="unac_only"><span class="select-disabled"
+                                                data-display="仅未通过"></span></div>
+                                        <div class="option" data="new_only"><span class="select-disabled"
+                                                data-display="仅未提交"></span></div>
+                                    </div>
+                                    <input type="hidden" name="exlg_dialog_board__animation_speed">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submain" main-data="tasklist-ex">
+                        <div class="item">
+                            <div class="header">隐藏已通过的题目</div>
+                            <div class="meta">Auto Clear</div>
+                            <div class="right-floating">
+                                <div class="checkbox">
+                                    <i></i>
+                                    <input type="hidden" name="tasklist_ex__auto_clear">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="header">任务计划内随机跳题</div>
+                            <div class="meta">Rand Problem in Tasklist</div>
+                            <div class="right-floating">
+                                <div class="checkbox">
+                                    <i></i>
+                                    <input type="hidden" name="tasklist_ex__rand_problem_in_tasklist">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submain" main-data="hide-solution">
+                        <div class="item">
+                            <div class="header">隐藏题解</div>
+                            <div class="meta">Hide Solution</div>
+                            <div class="right-floating">
+                                <div class="checkbox">
+                                    <i></i>
+                                    <input type="hidden" name="hide_solution__hide_solution">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submain" main-data="keyboard-and-cli">
+                        <div class="item">
+                            <div class="header">语言</div>
+                            <div class="meta">Lang</div>
+                            <div class="right-floating">
+                                <div class="drop-select">
+                                    <div class="selected"><span class="select-disabled"></span></div>
+                                    <div class="options">
+                                        <div class="option default" data="en"><span class="select-disabled"
+                                                data-display="English"></span></div>
+                                        <div class="option" data="zh"><span class="select-disabled"
+                                                data-display="中文"></span></div>
+                                    </div>
+                                    <input type="hidden" name="keyboard_and_cli__lang">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submain" main-data="benben-ranklist">
+                        <div class="item">
+                            <div class="header">显示</div>
+                            <div class="meta">Show</div>
+                            <div class="right-floating">
+                                <div class="checkbox">
+                                    <i></i>
+                                    <input type="hidden" name="benben_ranklist__show">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submain" main-data="discussion-save">
+                        <div class="item">
+                            <div class="header">自动保存讨论</div>
+                            <div class="meta">Auto Save Discussion</div>
+                            <div class="right-floating">
+                                <div class="checkbox">
+                                    <i></i>
+                                    <input type="hidden" name="discussion_save__auto_save_discussion">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submain" main-data="mainpage-discuss-limit">
+                        <div class="item">
+                            <div class="header">最大讨论数</div>
+                            <div class="meta">Max Discussion</div>
+                            <div class="right-floating">
+                                <div class="slider" data-min="4" data-max="16" data-val="6">
+                                    <div class="fake-slider"></div>
+                                    <div class="thumb"></div>
+                                    <input type="hidden" name="mainpage_discuss_limit__max_discussion">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submain" main-data="benben-emoticon">
+                        <div class="item">
+                            <div class="header">显示</div>
+                            <div class="meta">Show</div>
+                            <div class="right-floating">
+                                <div class="checkbox">
+                                    <i></i>
+                                    <input type="hidden" name="benben_emoticon__show">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submain" main-data="user-css">
+                        <div class="item">
+                            <div class="header">层叠样式表</div>
+                            <div class="meta">CSS</div>
+                            <div class="right-floating">
+                                <input class="textbox right" type="text" name="user_css__css">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submain" main-data="dash-board">
+                        <div class="item">
+                            <div class="header">语言</div>
+                            <div class="meta">Lang</div>
+                            <div class="right-floating">
+                                <div class="drop-select">
+                                    <div class="selected"><span class="select-disabled"></span></div>
+                                    <div class="options">
+                                        <div class="option" data="en"><span class="select-disabled"
+                                                data-display="English"></span></div>
+                                        <div class="option default" data="zh"><span class="select-disabled"
+                                                data-display="中文"></span></div>
+                                    </div>
+                                    <input type="hidden" name="dash_board__lang">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="inner">
+                <div class="item" sub-data="0">
+                    <div class="content"><i class="fas fa-list-ul"></i></div>
+                </div>
+                <div class="item" sub-data="1">
+                    <div class="content"><i class="fas fa-bug"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./juicy-panel.js"></script>
+    <script src="./juicy-ui.js"></script>
+</body>
+
+</html>

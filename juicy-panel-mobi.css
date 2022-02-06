@@ -1,0 +1,361 @@
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.panel-mobi {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.panel-mobi>.header {
+    width: 100%;
+    height: 11.8rem;
+    background-color: #eeedee;
+    box-sizing: border-box;
+    padding: 1rem 3.3rem 1rem 3.3rem;
+    box-shadow: 0 .1rem .6rem #ccc;
+}
+
+.panel-mobi>.header>.header-text>.main-header {
+    color: #444;
+    font-size: 3.9rem;
+}
+
+.panel-mobi>.header>.header-text>.meta {
+    color: #bbb;
+    font-size: 2.7rem;
+}
+
+.panel-mobi>.nav {
+    width: 100%;
+    height: 10rem;
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+    background-color: #f3f2f3;
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    box-shadow: 0 -.1rem .5rem #ddd;
+}
+
+.panel-mobi>.nav>.inner {
+    display: flex;
+    width: min-content;
+    height: 10rem;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.panel-mobi>.nav>.inner>.item {
+    display: inline-block;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 100%;
+    background-color: #e6e5e6;
+    margin: 0 1.8rem 0 1.8rem;
+    box-shadow: 0 0.1em 0.3em #ccc;
+}
+
+.panel-mobi>.nav>.inner>.item>.content {
+    color: #aaa;
+    width: min-content;
+    height: min-content;
+    font-size: 2.6rem;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.panel-mobi>.content {
+    width: 100%;
+    height: calc(100% - 21.8rem);
+    position: absolute;
+    top: 11.8rem;
+    left: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: block;
+}
+
+.panel-mobi>.content>.inner {
+    width: 200vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0vw;
+    box-sizing: border-box;
+    display: flex;
+    transition: ease-out left .2s;
+}
+
+.panel-mobi>.content>.inner>.sub {
+    width: 100vw;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+
+.panel-mobi>.content>.inner>.sub>.inner {
+    display: flex;
+    width: max-content;
+    height: 100%;
+    position: absolute;
+    left: 0vw;
+    transition: ease-out left .2s;
+}
+
+.panel-mobi>.content>.inner>.sub>.inner>.subside {
+    width: 100vw;
+    height: 100%;
+    background-color: #f8f7f8;
+    padding: 0 1rem 0 1rem;
+    font-size: 1.6em;
+    overflow: auto;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.panel-mobi>.content>.inner>.sub>.inner>.subside::-webkit-scrollbar {
+    width: 18px;
+    height: 12px;
+    background-color: #d7dadd;
+}
+
+.panel-mobi>.content>.inner>.sub>.inner>.subside::-webkit-scrollbar-corner {
+    background-color: #d7dadd;
+}
+
+.panel-mobi>.content>.inner>.sub>.inner>.subside::-webkit-scrollbar-thumb {
+    border-radius: 9px;
+    background-color: #c0c3c6;
+}
+
+.panel-mobi>.content>.inner>.sub>.inner>.subside>.item {
+    width: 100%;
+    height: 11rem;
+    background-color: #0000;
+    transition: ease-in-out background-color .1s;
+    box-sizing: border-box;
+    font-size: 0;
+    padding: 2rem .8rem 2rem .8rem;
+    position: relative;
+}
+
+.panel-mobi>.content>.inner>.sub>.inner>.subside>.item:not(:nth-of-type(1))::before {
+    content: "";
+    width: calc(100% - 1.6rem);
+    height: 2px;
+    background-color: #ccc;
+    position: absolute;
+    top: 0;
+}
+
+.panel-mobi>.content>.inner>.sub>.inner>.subside>.item>.header {
+    display: block;
+    font-size: 2.9rem;
+    margin-right: .5rem;
+    position: relative;
+    left: .4rem;
+}
+
+.panel-mobi>.content>.inner>.sub>.inner>.subside>.item>.meta {
+    color: #bbb;
+    display: inline-block;
+    font-size: 2.2rem;
+    position: relative;
+    left: .4rem;
+}
+
+.panel-mobi>.content>.inner>.sub>.inner>.subside>.item>.right-floating {
+    display: flex;
+    font-size: 4rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 1.2rem;
+    box-sizing: border-box;
+}
+
+.panel-mobi>.content>.inner>.sub>.inner>.subside>.item>.right-floating>.checkbox {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+
+
+.panel-mobi>.content>.inner>.sub>.inner>.subside>.item>.right-floating>.more {
+    margin-left: 1.5rem;
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+    background-color: #eeedee;
+    transition: ease-in-out background-color .1s, ease-out box-shadow .15s;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: .4rem;
+    box-sizing: border-box;
+    box-shadow: 0 0em 0em #ccc;
+    z-index: 999;
+}
+
+.panel-mobi>.content>.inner>.sub>.inner>.subside>.item>.right-floating>.more>.content {
+    color: #bbb;
+    transition: ease-in-out color .1s;
+    width: min-content;
+    height: min-content;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.panel-mobi>.content>.inner>.sub>.inner>.subside>.item>.right-floating>.more-placeholder {
+    margin-left: 1.5rem;
+    display: inline-block;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: .4rem;
+    box-sizing: border-box;
+    visibility: hidden;
+}
+
+.panel-mobi>.content>.inner>.sub>.inner>.subside>.item>.fake-button {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.panel-mobi>.content>.inner>.main {
+    width: 100vw;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.panel-mobi>.content>.inner>.main>.submain {
+    width: 100vw;
+    height: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.panel-mobi>.content>.inner>.main>.submain>.item {
+    width: 100%;
+    height: 12rem;
+    font-size: 3rem;
+    padding: 3rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.panel-mobi>.content>.inner>.main>.submain>.item>.header {
+    display: inline-block;
+    font-size: 1em;
+    margin-right: .2rem;
+    position: absolute;
+    top: 2.2rem;
+    left: 3rem;
+}
+
+.panel-mobi>.content>.inner>.main>.submain>.item>.meta {
+    color: #bbb;
+    display: inline-block;
+    font-size: 0.8em;
+    position: absolute;
+    top: 6.2rem;
+    left: 3rem;
+}
+
+.panel-mobi>.content>.inner>.main>.submain>.item>.right-floating {
+    position: absolute;
+    top: 2.2rem;
+    bottom: 2.2rem;
+    right: 3rem;
+    width: 27rem;
+    font-size: 4rem;
+}
+
+.panel-mobi>.content>.inner>.main>.submain>.item>.right-floating>.checkbox {
+    margin-top: 1.8rem;
+    float: right;
+}
+
+.panel-mobi>.content>.inner>.main>.submain>.item>.right-floating>.textbox {
+    font-size: 1.8rem;
+    width: 100%;
+}
+
+.panel-mobi>.content>.inner>.main>.submain>.item>.right-floating>.drop-select {
+    font-size: 2.3rem;
+    margin-top: 1.6rem;
+    float: right;
+}
+
+.panel-mobi>.content>.inner>.main>.submain>.item>.right-floating>.slider {
+    border-radius: 5px;
+    background: #eeedee;
+    width: 100%;
+    height: .12em;
+    margin-top: 3.3rem;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 1em;
+}
+
+.panel-mobi>.content>.inner>.main>.submain>.item>.right-floating>.slider::after {
+    color: #ccc;
+    font-size: .5em;
+    content: attr(data-val);
+    display: block;
+    position: absolute;
+    top: -.58em;
+    left: -2em;
+    text-align: right;
+    float: right;
+    width: 1.5rem;
+}
+
+.panel-mobi>.content>.inner>.main>.submain>.item>.right-floating>.slider>.fake-slider {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.panel-mobi>.content>.inner>.main>.submain>.item>.right-floating>.slider>.thumb {
+    width: .4em;
+    height: .4em;
+    border-radius: 100%;
+    position: relative;
+    left: 0px;
+    top: -.14em;
+    background-color: rgb(202, 200, 204);
+    cursor: pointer;
+    transition: ease-in-out background-color .15s;
+    box-sizing: border-box;
+}
+
+.panel-mobi>.content>.inner>.main>.submain>.item>.right-floating>.slider>.thumb:hover {
+    background-color: rgb(116, 140, 250);
+}
+
+.panel-mobi>.content>.inner>.main>.submain>.item>.right-floating>.slider>.thumb:active {
+    background-color: rgb(93, 122, 250);
+}

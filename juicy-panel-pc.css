@@ -1,0 +1,347 @@
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+.panel-pc {
+    border-radius: 1rem;
+    width: 80rem;
+    height: 50rem;
+    background-color: #fff;
+    box-shadow: 0 0 .5rem #aaa;
+    margin: auto;
+    position: relative;
+    top: 49%;
+    transform: translateY(-50%);
+}
+
+.panel-pc>.header>.header-text {
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+    height: 3.5rem;
+    background-color: #eeedee;
+    box-sizing: border-box;
+    padding: .9rem 1.5rem .9rem 1.5rem;
+    font-size: 1.3rem;
+    display: block;
+}
+
+.panel-pc>.header>.header-text>.meta {
+    color: #bbb;
+    font-size: 1rem;
+    float: right;
+    text-align: right;
+    margin-top: -1.65rem;
+}
+
+.panel-pc>.content {
+    display: inline-flex;
+    border-radius: 0 0 1rem 1rem;
+    width: 100%;
+    height: 46.5rem;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.panel-pc>.nav {
+    position: absolute;
+    top: 3.5rem;
+    display: inline-block;
+    width: 3.3rem;
+    height: 46.5rem;
+    box-sizing: border-box;
+}
+
+.panel-pc>.nav>.inner {
+    display: inline-block;
+    border-radius: 0 0 0 1rem;
+    width: 100%;
+    height: 100%;
+    background-color: #f3f2f3;
+    box-sizing: border-box;
+    font-size: 1.6em;
+    padding: .3rem 0 .3rem 0;
+}
+
+.panel-pc>.nav>.inner>.item {
+    width: 100%;
+    height: 3.3rem;
+    background-color: #0000;
+    transition: ease-in-out background-color .1s;
+    position: relative;
+}
+
+.panel-pc>.nav>.inner>.item:hover {
+    background-color: #0001;
+}
+
+.panel-pc>.nav>.inner>.item>.content {
+    color: #aaa;
+    width: min-content;
+    height: min-content;
+    font-size: 1.3rem;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.panel-pc>.content {
+    position: absolute;
+    top: 3.5rem;
+    left: 3.3rem;
+    display: block;
+    width: 76.7rem;
+    height: 46.5rem;
+    box-sizing: border-box;
+}
+
+.panel-pc>.content>.inner {
+    display: inline-flex;
+    border-radius: 0 0 1rem 1rem;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.panel-pc>.content>.inner>.sub {
+    width: 28rem;
+    height: 100%;
+    background-color: #f8f7f8;
+    box-sizing: border-box;
+    font-size: 1.6em;
+    overflow: hidden;
+    position: relative;
+}
+
+.panel-pc>.content>.inner>.sub>.inner {
+    display: flex;
+    width: max-content;
+    height: 100%;
+    position: absolute;
+    left: 0rem;
+    transition: ease-out left .2s;
+}
+
+.panel-pc>.content>.inner>.sub>.inner>.subside {
+    width: 28rem;
+    height: 100%;
+    background-color: #f8f7f8;
+    box-sizing: border-box;
+    padding: .3rem;
+    font-size: 1.6em;
+    overflow: auto;
+}
+
+.panel-pc>.content>.inner>.sub>.inner>.subside::-webkit-scrollbar {
+    width: 6px;
+    height: 4px;
+    background-color: #d7dadd;
+}
+
+.panel-pc>.content>.inner>.sub>.inner>.subside::-webkit-scrollbar-corner {
+    background-color: #d7dadd;
+}
+
+.panel-pc>.content>.inner>.sub>.inner>.subside::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: #c0c3c6;
+}
+
+.panel-pc>.content>.inner>.sub>.inner>.subside>.item {
+    width: 100%;
+    height: 3rem;
+    background-color: #0000;
+    transition: ease-in-out background-color .1s;
+    box-sizing: border-box;
+    font-size: 0;
+    padding: .8rem;
+    position: relative;
+}
+
+.panel-pc>.content>.inner>.sub>.inner>.subside>.item:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+.panel-pc>.content>.inner>.sub>.inner>.subside>.item>.header {
+    display: inline-block;
+    font-size: 1rem;
+    margin-right: .5rem;
+}
+
+.panel-pc>.content>.inner>.sub>.inner>.subside>.item>.meta {
+    color: #bbb;
+    display: inline-block;
+    font-size: .8rem;
+}
+
+.panel-pc>.content>.inner>.sub>.inner>.subside>.item>.right-floating {
+    display: flex;
+    font-size: 1.45rem;
+    float: right;
+}
+
+.panel-pc>.content>.inner>.sub>.inner>.subside>.item>.right-floating>.checkbox {
+    z-index: 999;
+}
+
+.panel-pc>.content>.inner>.sub>.inner>.subside>.item>.right-floating>.more {
+    margin-left: .5rem;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border-radius: 100%;
+    background-color: #eeedee;
+    transition: ease-in-out background-color .1s, ease-out box-shadow .15s;
+    position: relative;
+    padding-left: .1rem;
+    box-sizing: border-box;
+    box-shadow: 0 0em 0em #ccc;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.panel-pc>.content>.inner>.sub>.inner>.subside>.item>.right-floating>.more:hover {
+    background-color: #e3e2e3;
+    box-shadow: 0 0.02em 0.05em #ccc;
+}
+
+.panel-pc>.content>.inner>.sub>.inner>.subside>.item>.right-floating>.more>.content {
+    color: #bbb;
+    transition: ease-in-out color .1s;
+    width: min-content;
+    height: min-content;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.panel-pc>.content>.inner>.sub>.inner>.subside>.item>.right-floating>.more:hover>.content {
+    color: #b0b0b0;
+}
+
+.panel-pc>.content>.inner>.sub>.inner>.subside>.item>.right-floating>.more-placeholder {
+    margin-left: .5rem;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border-radius: 100%;
+    position: relative;
+    padding-left: .1rem;
+    box-sizing: border-box;
+    visibility: hidden;
+}
+
+.panel-pc>.content>.inner>.sub>.inner>.subside>.item>.fake-button {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.panel-pc>.content>.inner>.main {
+    border-radius: 0 0 1rem 0;
+    width: 48.7rem;
+    height: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    font-size: 1.6em;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.panel-pc>.content>.inner>.main>.submain {
+    width: 100%;
+    height: 0rem;
+    transition: ease-in-out height .2s;
+    overflow: hidden;
+    font-size: 1.2rem;
+}
+
+.panel-pc>.content>.inner>.main>.submain>.item {
+    width: 100%;
+    height: 3rem;
+    padding: .7rem;
+    box-sizing: border-box;
+}
+
+.panel-pc>.content>.inner>.main>.submain>.item>.header {
+    display: inline-block;
+    font-size: 1em;
+    margin-right: .2rem;
+}
+
+.panel-pc>.content>.inner>.main>.submain>.item>.meta {
+    color: #bbb;
+    display: inline-block;
+    font-size: 0.8em;
+}
+
+.panel-pc>.content>.inner>.main>.submain>.item>.right-floating {
+    display: flex;
+    font-size: 1.6rem;
+    float: right;
+}
+
+.panel-pc>.content>.inner>.main>.submain>.item>.right-floating>.checkbox {
+    font-size: 1.49rem;
+}
+
+.panel-pc>.content>.inner>.main>.submain>.item>.right-floating>.slider {
+    border-radius: 5px;
+    background: #eeedee;
+    width: 20rem;
+    height: .12em;
+    margin-top: .41em;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.panel-pc>.content>.inner>.main>.submain>.item>.right-floating>.slider::after {
+    color: #ccc;
+    font-size: 1rem;
+    content: attr(data-val);
+    display: block;
+    position: absolute;
+    top: -.6rem;
+    left: -2rem;
+    text-align: right;
+    float: right;
+    width: 1.5rem;
+}
+
+.panel-pc>.content>.inner>.main>.submain>.item>.right-floating>.slider>.fake-slider {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.panel-pc>.content>.inner>.main>.submain>.item>.right-floating>.slider>.thumb {
+    width: .4em;
+    height: .4em;
+    border-radius: 100%;
+    position: relative;
+    left: 0px;
+    top: -.14em;
+    background-color: rgb(202, 200, 204);
+    cursor: pointer;
+    transition: ease-in-out background-color .15s;
+    box-sizing: border-box;
+}
+
+.panel-pc>.content>.inner>.main>.submain>.item>.right-floating>.slider>.thumb:hover {
+    background-color: rgb(116, 140, 250);
+}
+
+.panel-pc>.content>.inner>.main>.submain>.item>.right-floating>.slider>.thumb:active {
+    background-color: rgb(93, 122, 250);
+}
